@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Brasília Resort - Hotel Fazenda</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <style>
+    /* Brand colors based on logo: green + gold */
+    :root {
+      --brand-green: #2f5f2b;
+      --brand-gold: #d1a43a;
+      --text-dark: #222;
+    }
+    body { color: var(--text-dark); }
+    header.site-header { background: var(--brand-green); color: white; padding: 18px 0; }
+    header .logo img { height:72px; }
+    nav.main-nav a { color: #fff; margin: 0 12px; text-decoration:none; }
+    .hero {
+      background-image: url('assets/img/imagem_site.png');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 0;
+      position: relative;
+      color: white;
+    }
+    .hero .overlay {
+      background: rgba(0,0,0,0.35);
+      padding: 30px;
+      max-width: 520px;
+      border-radius: 8px;
+    }
+    .gallery img { width:100%; border-radius:6px; }
+    .services li { margin-bottom:10px; }
+    .testimonials blockquote { font-style: italic; background:#f9f9f9; padding:12px; border-left:4px solid var(--brand-green); }
+    footer { background:#111; color:#eee; padding:18px 0; text-align:center; }
+    @media (max-width:768px) {
+      header .logo img { height:56px; }
+      .hero { padding:60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Brasília Resort Logo">
+      </div>
+      <nav class="main-nav">
+        <a href="hub.html">Início</a>
+        <a href="#sobre">O Resort</a>
+        <a href="#acomodacoes">Acomodações</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="banner">
+    <div class="container" style="display:flex;gap:30px;align-items:center;">
+      <div class="overlay">
+        <h1>Seja bem‑vindo(a) ao Brasília Resort</h1>
+        <p>Um refúgio no cerrado: conforto, lazer e experiências em contato com a natureza para toda a família.</p>
+        <p><strong>Reserve sua estadia e garanta momentos inesquecíveis.</strong></p>
+      </div>
+      <div style="margin-left:auto;background:rgba(255,255,255,0.95);padding:18px;border-radius:8px;max-width:360px;width:100%;">
+        <h3 style="color:var(--brand-green)">Reserve Sua Estadia</h3>
+        <form>
+          <label>Check-in<br><input type="date" style="width:100%;padding:8px;margin-top:6px;"></label><br><br>
+          <label>Check-out<br><input type="date" style="width:100%;padding:8px;margin-top:6px;"></label><br><br>
+          <label>Adultos<br><select style="width:100%;padding:8px;"><option>1</option><option>2</option><option>3</option></select></label><br><br>
+          <button style="background:var(--brand-green);color:#fff;border:none;padding:10px 14px;width:100%;border-radius:6px;">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <main class="container" style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <section id="sobre">
+      <h2>Sobre o Resort</h2>
+      <p>O Brasília Resort Hotel Fazenda é um tradicional complexo de lazer em Brasília, oferecendo infraestrutura completa para hospedagem, eventos, day‑use e atividades ao ar livre. Ideal para famílias, casais e grupos que buscam um contato direto com a natureza sem abrir mão do conforto.</p>
+    </section>
+
+    <section id="servicos" style="margin-top:32px;">
+      <h2>Serviços</h2>
+      <ul class="services">
+        <li><strong>Hospedagem completa:</strong> chalés e suítes com vista para o lago e áreas verdes.</li>
+        <li><strong>Área Aquática:</strong> piscinas, toboáguas e área infantil.</li>
+        <li><strong>Trilhas e Passeios:</strong> trilhas ecológicas e passeios a cavalo.</li>
+        <li><strong>Restaurante:</strong> culinária regional e buffet em eventos.</li>
+        <li><strong>Eventos:</strong> espaço para casamentos, festas e confraternizações.</li>
+      </ul>
+    </section>
+
+    <section id="galeria" style="margin-top:32px;">
+      <h2>Galeria</h2>
+      <div class="gallery" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+        <img src="assets/img/piscina.png" alt="Piscina">
+        <img src="assets/img/lago.png" alt="Lago">
+        <img src="assets/img/comida.png" alt="Restaurante">
+        <img src="assets/img/trilhas.png" alt="Trilhas">
+        <img src="assets/img/imagem_site.png" alt="Vista geral" style="grid-column: span 2;">
+      </div>
+    </section>
+
+    <section id="depoimentos" style="margin-top:32px;">
+      <h2>O que nossos hóspedes dizem</h2>
+      <div class="testimonials">
+        <blockquote>"Excelente estrutura, atendimento cordial e muita área verde. Voltarei com a família!" – Ana C.</blockquote>
+        <blockquote>"Ótimo para eventos e muito lazer para crianças. Atendimento atencioso." – Pedro S.</blockquote>
+        <blockquote>"Lugar acolhedor, perfeito para relaxar e aproveitar o fim de semana." – Marina L.</blockquote>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:32px;">
+      <h2>Contato</h2>
+      <p><strong>Endereço:</strong> Zona Rural — Brasília, DF</p>
+      <p><strong>Telefone:</strong> (61) 3333‑2222</p>
+      <p><strong>E‑mail:</strong> contato@brasiliaresort.com.br</p>
+      <p>Siga-nos: <a href="#">Instagram</a> • <a href="#">Facebook</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Brasília Resort Hotel Fazenda — &copy;  • <span style="color:var(--brand-gold)">Designed by BootstrapMade</span></p>
+  </footer>
+
+  <script src='assets/vendor/bootstrap/js/bootstrap.min.js'></script>
+</body>
+</html>
